@@ -19,20 +19,23 @@ A brief description of this Autocomplete component
 ## Props
 Props of Autocomplete commponent
 
-| Name           | Type(s)       | Description                                                                                                                                              | Default   |
-|----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| description    | string        | The description to display below the component.                                                                                                          |           |
-| disabled       | boolean       | If true, the component is disabled, i.e. it cannot be interacted with.                                                                                    | false     |
-| filterOptions  | function      | A function to determine the filtered options to be rendered on search. If provided, this will override the default built-in filtering of the component.   |           |
-| label          | string        | The label to display above the component.                                                                                                                 |           |
-| loading        | boolean       | If true, the component will be in a loading state. This should show a spinner.                                                                            | false     |
-| multiple       | boolean       | If true, then value must be an array and the multiple selections should be supported.                                                                     | false     |
-| onChange       | function      | The callback that is fired when the value changes.                                                                                                        |           |
-| onInputChange  | function      | The callback that is fired when the input value changes.                                                                                                  |           |
-| options*       | Array<T>      | Array of options to be displayed and selected. Note: T can be either a string or an object.                                                               |           |
-| placeholder    | string        | The placeholder search input text.                                                                                                                        |           |
-| renderOption   | function      | Customises the rendered option display.                                                                                                                   |           |
-| value          | Array<T>, T   | The selected value (if any) of the autocomplete.                                                                                                          |           |
+| Name           | Type(s)       | Default   | Description                                                                                                                                              |
+|----------------|---------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| description    | string        |           | The description to display below the component.                                                                                                          |
+| disabled       | boolean       | false     | If true, the component is disabled, i.e. it cannot be interacted with.                                                                                    |
+| filterOptions  | function      |           | A function to determine the filtered options to be rendered on search. If provided, this will override the default built-in filtering of the component.   |
+|                |               |           | Note: If options of string type are provided, then the default filtering should just be a simple string equality comparison with the current input value. |
+|                |               |           | However, if options of object type are provided, you should determine an appropriate default built-in filtering for this scenario.                        |
+| label          | string        |           | The label to display above the component.                                                                                                                 |
+| loading        | boolean       | false     | If true, the component will be in a loading state. This should show a spinner.                                                                            |
+| multiple       | boolean       | false     | If true, then value must be an array and the multiple selections should be supported.                                                                     |
+| onChange       | function      |           | The callback that is fired when the value changes.                                                                                                        |
+| onInputChange  | function      |           | The callback that is fired when the input value changes.                                                                                                  |
+| options*       | Array<T>      |           | Array of options to be displayed and selected. Note: T can be either a string or an object.                                                               |
+| placeholder    | string        |           | The placeholder search input text.                                                                                                                        |
+| renderOption   | function      |           | Customises the rendered option display.                                                                                                                   |
+| value          | Array<T>, T   |           | The selected value (if any) of the autocomplete.                                                                                                          |
+
 
 ## Component Usage
 
