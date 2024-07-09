@@ -1,46 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to Autocomplete 
 
-## Available Scripts
+A brief description of this Autocomplete component
 
-In the project directory, you can run:
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+  git clone https://github.com/DanielJames0302/Autocomplete.git
+  cd Autocomplete
+  npm run start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+    
+## Props
+Props of Autocomplete commponent
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Name           | Type(s)       | Description                                                                                                                                              | Default   |
+|----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| description    | string        | The description to display below the component.                                                                                                          |           |
+| disabled       | boolean       | If true, the component is disabled, i.e. it cannot be interacted with.                                                                                    | false     |
+| filterOptions  | function      | A function to determine the filtered options to be rendered on search. If provided, this will override the default built-in filtering of the component.   |           |
+| label          | string        | The label to display above the component.                                                                                                                 |           |
+| loading        | boolean       | If true, the component will be in a loading state. This should show a spinner.                                                                            | false     |
+| multiple       | boolean       | If true, then value must be an array and the multiple selections should be supported.                                                                     | false     |
+| onChange       | function      | The callback that is fired when the value changes.                                                                                                        |           |
+| onInputChange  | function      | The callback that is fired when the input value changes.                                                                                                  |           |
+| options*       | Array<T>      | Array of options to be displayed and selected. Note: T can be either a string or an object.                                                               |           |
+| placeholder    | string        | The placeholder search input text.                                                                                                                        |           |
+| renderOption   | function      | Customises the rendered option display.                                                                                                                   |           |
+| value          | Array<T>, T   | The selected value (if any) of the autocomplete.                                                                                                          |           |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Component Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+With this component, you are be able to implement two following use-cases:
+- Synchronous autocomplete with single and multiple option(s) selection.
+- Debounced search, i.e. filtering of displayed options only occurs after typing has ceased for a specified amount of time.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
