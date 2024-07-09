@@ -23,9 +23,7 @@ Props of Autocomplete commponent
 |----------------|---------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | description    | string        |           | The description to display below the component.                                                                                                          |
 | disabled       | boolean       | false     | If true, the component is disabled, i.e. it cannot be interacted with.                                                                                    |
-| filterOptions  | function      |           | A function to determine the filtered options to be rendered on search. If provided, this will override the default built-in filtering of the component.   |
-|                |               |           | Note: If options of string type are provided, then the default filtering should just be a simple string equality comparison with the current input value. |
-|                |               |           | However, if options of object type are provided, you should determine an appropriate default built-in filtering for this scenario.                        |
+| filterOptions  | function      |           | A function to determine the filtered options to be rendered on search. If provided, this will override the default built-in filtering of the component.   |                  |
 | label          | string        |           | The label to display above the component.                                                                                                                 |
 | loading        | boolean       | false     | If true, the component will be in a loading state. This should show a spinner.                                                                            |
 | multiple       | boolean       | false     | If true, then value must be an array and the multiple selections should be supported.                                                                     |
