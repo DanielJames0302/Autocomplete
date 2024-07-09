@@ -4,12 +4,8 @@ import { countries } from "./components/countries";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
-
   const [valueAsync, setValueAsync] = useState<any[]>([]);
   const [valueSync, setValueSync] = useState<any[]>()
-  const handleChangeValue = (newValue: any) => {
-    setValueSync(newValue);
-  };
   const [loading, setLoading] = useState(false);
   const typingTimeoutRef = useRef<any>(null);
 
@@ -36,6 +32,7 @@ function App() {
     },
     []
   );
+  
   return (
     <div className="bg-slate-100 h-screen flex items-center justify-center">
       <div className="h-auto p-6 bg-white p-10px flex flex-col items-start justify-start gap-3 w-1/4">

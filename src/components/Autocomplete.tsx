@@ -99,7 +99,6 @@ const Autocomplete: React.FC<AutocompleteProps> = ({
       filterOptions,
       options,
       defaultFilterOptions,
-      inputValue,
       loading,
     ]
   );
