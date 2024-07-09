@@ -37,6 +37,34 @@ Props of Autocomplete commponent
 | value          | Array<T>, T   |           | The selected value (if any) of the autocomplete.                                                                                                          |
 
 
+**filterOptions**
+
+ Signature:   
+ ```(options: any[], inputValue: string) => any[]```
+ - ```options``` : the options to render.
+ - ```inputValue```: the current value of the input.
+
+
+**onChange**
+
+ Signature:   
+ ```(newValues: any[]) => void```
+ - ```newValues``` : new options selected .
+
+
+**onInputChange**
+
+ Signature:   
+ ```(event: React.ChangeEvent<HTMLInputElement>) => void```
+
+**renderOption**
+
+ Signature:   
+ ```function(option: any, highlightOption: number, index: number) => React.ReactNode```
+ - ```option``` : the option to render .
+ - ```highlightOption```: the option to be highlighted.
+ - ```index```: the index of the ```option``` in the rendered list.
+
 ## Component Usage
 
 With this component, you are be able to implement two following use-cases:
