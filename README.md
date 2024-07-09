@@ -38,7 +38,7 @@ Props of Autocomplete commponent
 **filterOptions**
 
  Signature:   
- ```(options: any[], inputValue: string) => any[]```
+ ```function(options: any[], inputValue: string) => any[]```
  - ```options``` : the options to render.
  - ```inputValue```: the current value of the input.
 
@@ -46,14 +46,14 @@ Props of Autocomplete commponent
 **onChange**
 
  Signature:   
- ```(newValues: any[]) => void```
+ ```function(newValues: any[]) => void```
  - ```newValues``` : new options selected .
 
 
 **onInputChange**
 
  Signature:   
- ```(event: React.ChangeEvent<HTMLInputElement>) => void```
+ ```function(event: React.ChangeEvent<HTMLInputElement>) => void```
 
 **renderOption**
 
