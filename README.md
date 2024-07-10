@@ -9,6 +9,7 @@ A brief description of this Autocomplete component
 ```bash
   git clone https://github.com/DanielJames0302/Autocomplete.git
   cd Autocomplete
+  npm install 
   npm run start
 ```
 
